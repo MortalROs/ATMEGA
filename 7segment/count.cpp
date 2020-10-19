@@ -43,7 +43,7 @@ int nrprint(char dataprint) {
 
 int main(void)
 {
-    DDRB = 0b11111111;
+    DDRB = 0xFF;
 	
     while (1) 
     {
