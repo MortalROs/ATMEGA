@@ -22,7 +22,8 @@ char serial_in ()
 {
 	while ( !( UCSR0A & (1 << RXC0 )) );
 	return UDR0 ;
-}
+}
+
 
 char nrprint(char *dataprint) {
 	
@@ -66,7 +67,7 @@ char nrprint(char *dataprint) {
 int main(void)
 {
 	serial_init(USART_BAUDRATE);
-    DDRB = 0b11111111;
+    DDRB = 0xFF;
 	PORTB = 0x00;
 	char *text;
 	
