@@ -5,7 +5,7 @@
 
 char nrprint(char *dataprint) {
 	
-	int printvalue;
+	unsigned int printvalue;
 
 	switch(*dataprint) {
 		case '0': printvalue = 0x3F; break;
