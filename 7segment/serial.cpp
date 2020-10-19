@@ -24,7 +24,6 @@ char serial_in ()
 	return UDR0 ;
 }
 
-
 char nrprint(char *dataprint) {
 	
 	int printvalue = 0x00;
